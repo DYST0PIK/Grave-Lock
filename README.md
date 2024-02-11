@@ -25,7 +25,7 @@ git clone https://github.com/DYST0PIK/Grave-Lock.git
 ```
 
 ```
-cd /Grave-Lock/src
+cd Grave-Lock/src
 ```
 
 ```
