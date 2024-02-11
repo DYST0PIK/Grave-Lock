@@ -21,7 +21,7 @@ sudo apt install python3
 # Installation Grave-Lock
 
 ```
-git clone 
+git clone https://github.com/DYST0PIK/Grave-Lock.git
 ```
 
 ```
