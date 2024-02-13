@@ -54,6 +54,7 @@ def decrypt_hash(hash):
     hashfounded = False
     print("Searching...\n")
     if os.stat("../dictionaries/passwords/" + passwordlist).st_size != 0:
+        print(" --- Dictionary Passwords: " + passwordlist + " ---\n ")
         with open("../dictionaries/passwords/" + passwordlist, errors="ignore") as diccionary:
             for password in diccionary:
                 if hashfounded is False:
@@ -105,6 +106,8 @@ def decrypt_hashlist():
     print("Searching...\n")
     if os.stat("../dictionaries/hashes/" + hashlist).st_size != 0:
         if os.stat("../dictionaries/passwords/" + passwordlist).st_size != 0:
+            print(" --- Dictionary Hashes: "+hashlist+" --- ")
+            print(" --- Dictionary Passwords: " + passwordlist + " ---\n ")
             with open("../dictionaries/hashes/" + hashlist, errors="ignore") as diccionaryhashes:
                 for hash in diccionaryhashes:
                     with open("../dictionaries/passwords/" + passwordlist, errors="ignore") as diccionarypasswords:
@@ -150,8 +153,8 @@ def hashes_list():
         x = x + 1
     option = input(">> ")
     try:
-        if int(option) > x or int(option) < 0:
-            print("Dictionary (DEFAULT) HASHES.txt")
+        if int(option) > (int(len(listfiles)) - 1) or int(option) < 0:
+            print("WRONG-OPTION - Selecting HASHES.txt (DEFAULT)")
             return listfiles[0]
         else:
             return listfiles[int(option)]
@@ -169,8 +172,8 @@ def passwords_list():
         x = x + 1
     option = input(">> ")
     try:
-        if int(option) > x or int(option) < 0:
-            print("Dictionary (DEFAULT) PASSWORDS.txt")
+        if int(option) > (int(len(listfiles)) - 1) or int(option) < 0:
+            print("WRONG-OPTION - Selecting PASSWORDS.txt (DEFAULT)")
             return listfiles[0]
         else:
             return listfiles[int(option)]
