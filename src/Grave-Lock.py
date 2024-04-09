@@ -11,7 +11,7 @@ print("""
                                                                             -DYST0PIK
     
      -- Grave Lock is a tool intended for decryption of hashes using dictionaries
-        and brute force attacks for educational purposes.
+        for educational purposes.
         
         """)
 

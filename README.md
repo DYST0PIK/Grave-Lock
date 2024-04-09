@@ -4,9 +4,7 @@
 
 # About it
 
-Grave-Lock is a cybersecurity tool designed for password encryption, decryption of hashes using dictionaries, and performing brute-force attacks.
-
-*Currently, the brute force attack tool is under development, so you will not be able to make use of this utility.*
+Grave-Lock is a cybersecurity tool designed for password encryption, decryption of hashes using dictionaries.
 
 # Installation Python
 
